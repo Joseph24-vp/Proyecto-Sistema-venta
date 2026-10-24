@@ -20,14 +20,14 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Iniciar Sessión</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form id="frmLogin">
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputEmailAddress"><i class="fas fa-user"></i> Usuario</label>
-                                                <input class="form-control py-1" id="inputEmailAddress" type="text" placeholder="Ingrese usuario" />
+                                                <label class="small mb-1" for="usuario"><i class="fas fa-user"></i> Usuario</label>
+                                                <input class="form-control py-1"  name="usuario" id="usuario" type="text" placeholder="Ingrese usuario" />
                                             </div>
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputPassword"><i class="fas fa-key"></i> Contraseña</label>
-                                                <input class="form-control py-1" id="inputPassword" type="password" placeholder="Ingrese Contraseña" /> 
+                                                <label class="small mb-1" for="clave"><i class="fas fa-key"></i> Contraseña</label>
+                                                <input class="form-control py-1" name="clave" id="clave" type="password" placeholder="Ingrese Contraseña" /> 
                                             </div>
                                             <!-- <div class="form-group">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
@@ -35,7 +35,7 @@
                                             </div>-->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <!-- <a class="small" href="password.html">Forgot Password?</a> -->
-                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                                <button  class="btn btn-primary"  type="submit" onclick="frmLogin(event);">Login</button>
                                             </div>
                                         </form>
                                     </div>
@@ -66,5 +66,6 @@
         <script src="<?php echo base_url; ?>Assets/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo base_url; ?>Assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo base_url; ?>Assets/js/scripts.js"></script>
+        <script src="<?php echo base_url; ?>Assets/js/funciones.js"></script>
     </body>
 </html>

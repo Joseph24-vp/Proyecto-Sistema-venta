@@ -1,4 +1,9 @@
+
 <?php
 const base_url = "http://localhost/sis_venta/"; 
-///base url para acceder al proyecto 
+const host = "localhost"; 
+const user = "root"; 
+const pass = ""; 
+const db = "sistema"; 
+const charset = "charset=utf8"; 
 ?>
